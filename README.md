@@ -54,6 +54,7 @@ Pixienails is a web application designed to help users book nail appointments wi
 - The project was built using a boilerplate template from a previous project.
 - Some file names or folder structures may not directly reflect the current project name but are fully functional and adapted to suit **Pixienails Website**.
 - Any legacy references (e.g., comments, file names) have been reviewed to ensure they do not affect the functionality or clarity of the application.
+- There is no Assets folder.
 
 ## Members
 
