@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixieNails</title>
+    <link rel="icon" type="image/x-icon" href="ASSETS/logo/pixienailsLogo.png">
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+    <!--NAVIGATION/HEADER-->
+    <div class="header">
+         <div class="container header-content">
+            <img src="ASSETS/logo/pixienailsLogo.png" alt="compass logo" class="logo">
+            <button id="burger-icon" class="burger"><img src="ASSETS/icons/burger-icon-white.png" alt="burger-icon"></button>
+
+            <div class="form-button">
+                <button class="loginbtn formbtn" onclick="setForm('login')">LOGIN</button>
+                <button class="signupbtn formbtn" onclick="setForm('signup')">SIGN UP</button>
+            </div>
+        </div>
+    </div>
+    <!---->
+
+    <!--BURGER MENU-->
+    <div id="burger-menu-id" class="burger-menu">
+        <div class="burger-menu-content">
+            <button id="close-btn" class="burger-back">
+                <img src="ASSETS/icons/close-button-white.png" alt="back">
+            </button>
+
+            <button class="burger-form-btn" onclick="setForm('login')">
+                LOGIN
+            </button>
+
+            <button class="burger-form-btn" onclick="setForm('signup')">
+                SIGNUP
+            </button>
+        </div>
+    </div>
+    <!---->
+
+    <!--MAIN CONTENT-->
+    <main >       
+        <!--SECTION 1-->
+        <div class="sec-1 fade-in-box">
+            <div class="container sec-1-content">
+                <p class="sec-1-txt">
+                    MAKING YOUR NAILS
+                </p>
+                <p class="sec-1-txt2">
+                    EXTRA CHARMING
+                </p>
+                <button class="active-btn btn" onclick="setForm('login')">GET STARTED!</button>
+            </div>
+        </div>
+        <!---->
+
+        <!--SECTION 2-->
+        <div class="container sec-2 appear">
+            <!--TITLE-->
+            <div class="sec-2-title">
+                <p>Services & Activities</p>
+            </div>
+            <!---->
+
+            <!--ACTIVITIES-->
+            <div class="activity-grid">
+                <div class="grid grid-item1">
+                    <p>BOOK AN APPOINTMENT</p>
+                    <img src="ASSETS/image/BOOK_AN_APPOINTMENT.png" alt="kayaking picture">
+                </div>
+
+                <div class="grid grid-item2">
+                    <p>NAIL SERVICES</p>
+                  <img src="ASSETS/image/NAIL SERVICES MENU.png" alt="hiking picture">
+                </div>
+
+                <div class="grid grid-item3">
+                    <p>NAILS GALLERY</p>
+                    <img src="ASSETS/image/NAIL SERVICES MENU.png" alt="mountain biking picture">
+                </div>
+
+                <div class="grid grid-item4">
+                    <p>NAILTECHS</p>
+                    <img src="ASSETS/image/NAILTECHS.png" alt="skiing picture">
+                </div>
+
+                <div class="grid grid-item6">
+                    <p>AFTERCARE TIPS</p>
+                    <img src="ASSETS/image/AFTERCARE TIPS.png" alt="fishing picture">
+                </div>
+
+                <div class="grid grid-item6">
+                    <p>CONTACT US</p>
+                    <img src="ASSETS/image/CONTACT US.png" alt="surfing picture">
+                </div>
+            </div>
+            <!---->
+
+            <!--BUTTON-->
+            <div class="btn-2">
+                <button class="active-btn" onclick="scrollToTop()">Let's Get Those Nails Poppin!</button>
+            </div>
+            <!---->
+        </div>
+        <!---->
+
+        <!--SECTION 3-->
+        <div class="sec-3 appear">
+            <div class="container sec-3-content">
+                <div class="sec-3-grid">
+                    <!--LOGO-->
+                    <div class="sec-3-grid-item item1">
+                        <img src="ASSETS/logo/LOGO-W.png" alt="compass logo">
+                    </div>
+                    <!---->
+
+                    <!--TITLE-->
+                    <div class="sec-3-grid-item item2">
+                        <h3>ABOUT <span style="color: var(--color-primary-4);">US</span></h3>
+                    </div>
+                    <!---->
+
+                    <!--TEXT-->
+                    <div class="sec-3-grid-item item3">
+                        <p>
+                            We at Pixie Nails are a haven for individual expression, not just an area for nails.  We embrace every style, every attitude, and every daring concept because we are rooted in open-minded design and motivated by artistry.
+                            Every manicure is a challenge we welcome, an opportunity for our skilled team to create beauty that is felt as well as seen.  Our objective?  to give you extra-charming, extra-luminous, and distinctively you nails.  Enter with a creative spark and leave with an air of assurance.
+
+                        </p>
+                    </div>
+                    <!---->
+                </div>
+            </div>          
+        </div>
+        <!---->
+    </main>
+    <!---->
+
+    <!--FOOTER-->
+    <div class="footer">
+        <div class="container footer-content">
+            <div class="socials">
+                <div class="social logo"><img src="ASSETS/logo/pixienailsLogo.png" alt="business logo"></div>
+                <div class="social media"><img src="ASSETS/icons/facebook-icon-white.png" alt="facebook icon"></div>
+                <div class="social media"><img src="ASSETS/icons/instagram-icon-white.png" alt="instagram icon"></div>
+                <div class="social media"><img src="ASSETS/icons/twitter-icon-white.png" alt="twitter icon"></div>
+                <div class="social media"><img src="ASSETS/icons/email-icon-white.png" alt="email icon"></div>
+            </div>
+
+            <div class="footer-text">
+                <p>Copyright@ 2025 PixieNails Site</p>
+            </div>
+        </div>
+    </div>
+    <!---->
+
+    <!--SCRIPT-->
+    <script type="module" src="JS/index.js" defer></script>
+    <!---->
+</body>
+</html>
