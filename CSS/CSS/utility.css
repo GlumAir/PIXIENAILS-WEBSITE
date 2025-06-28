@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap');
+
+:root {
+    --font-style-heading : 'Montserrat', sans-serif;
+    --font-style-text : 'Open Sans', sans-serif;
+    --color-primary-1 : rgb(68, 0, 47);
+    --color-primary-1-header : rgb(73, 12, 34);
+    --color-primary-2 : #663300;
+    --color-primary-3 : #993300;
+    --color-primary-4 : #ffd47f;
+    --color-primary-5 : rgb(255, 222, 227);
+    --color-secondary-1 : #000000;
+    --color-secondary-2 : rgb(9, 32, 44);
+    --color-secondary-3 : rgb(68, 0, 47);
+    --color-secondary-4 : #41004a;
+    --color-secondary-5 : rgba(255, 204, 102, 0.25);
+    --color-error : #ff1c1c;
+}
+
+/*UTILITY CLASSES*/
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    /*border: red solid 1px;*/
+}
+
+/*animations*/
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-box {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.appear {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.burger-menu {
+    width: 70vw;
+    height: 101vh;
+    position: fixed;
+    z-index: 1000;
+    right: 0;
+    background-color: rgba(134, 0, 94, 0.85);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(10px);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out; 
+}
+
+.burger-menu-content {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.burger-back {
+    height: 2.5rem;
+    width: 2.5rem;
+    background: none;
+    border: none;
+    margin: .5rem .5rem 1rem 0;
+    align-self: flex-end;
+}
+
+.burger-back img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.burger-form-btn, .burger-home-btn {
+    padding: 1rem;
+    font-family: var(--font-style-heading);
+    font-size: 1rem;
+    color: white;
+    background: none;
+    border: rgba(255, 255, 255, 0.5) solid 1px;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    margin: 0 .7rem 0 .7rem;
+}
+
+.burger-home-btn {
+  height: 4rem;
+  width: auto;
+}
+
+.burger-home-btn img {
+  width: auto;
+  height: 60%;
+  object-fit: contain;
+}
+
+.active {
+    transform: translateX(0);
+}
+
+.hidden {
+  pointer-events: none;
+}
