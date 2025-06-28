@@ -9,6 +9,8 @@ Pixienails is a web application designed to help users book nail appointments wi
 
 - [Features](#features)
 - [Technologies Used](#technologies-used)
+- [Additional Notes](#additional-notes)
+- [Members](#members)
 
 ---
 
@@ -46,3 +48,18 @@ Pixienails is a web application designed to help users book nail appointments wi
 - Backend: PHP
 - Database: MySQL
 - Authentication: Session-based
+
+## Additional Notes 
+(Arroyo)
+- The project was built using a boilerplate template from a previous project.
+- Some file names or folder structures may not directly reflect the current project name but are fully functional and adapted to suit **Pixienails Website**.
+- Any legacy references (e.g., comments, file names) have been reviewed to ensure they do not affect the functionality or clarity of the application.
+
+## Members
+
+- Arroyo, Rav Symon
+- Ambrad, Dancy Ellaine C.
+- Bagania, Franzel Erin L.
+- Bonus, Jaz Jamlech
+- Riego, Louis Adrian
+- Ricafort, Alexis Joyce C.
